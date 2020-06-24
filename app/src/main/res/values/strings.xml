@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ShopApp</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="new_user">New User? </string>
+    <string name="here">here</string>
+    <string name="sign_up"> Sign Up </string>
+    <string name="sign_in">Sign In</string>
+    <string name="remember_me">Remember Me</string>
 </resources>
