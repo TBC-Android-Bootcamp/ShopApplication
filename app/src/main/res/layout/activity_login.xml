@@ -18,11 +18,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="35dp"
-        android:layout_marginTop="70dp">
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="60dp">
 
         <EditText
-            android:drawableEnd="@mipmap/etDrawable"
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,7 +31,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp">
+        android:layout_marginBottom="30dp"
+        >
 
         <EditText
             android:id="@+id/etPassword"
@@ -41,15 +41,32 @@
             android:hint="@string/password" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <RadioButton
-        android:layout_marginBottom="60dp"
-        android:textSize="14sp"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/remember_me"
-        android:textColor="@color/newUser"/>
+        android:orientation="horizontal">
+
+        <ImageView
+            android:tag="0"
+            android:id="@+id/ivRememberMe"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/ic_unchecked"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:onClick="rememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"
+            android:textColor="#000"
+            android:layout_marginBottom="50dp"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
 
     <Button
+        android:onClick="logIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button_background"
@@ -60,6 +77,7 @@
         android:textColor="#fff"/>
 
     <TextView
+        android:onClick="forgotPassword"
         android:layout_marginBottom="50dp"
         android:layout_marginTop="35dp"
         android:id="@+id/forgotPassword"
@@ -78,7 +96,5 @@
         android:textSize="14sp"
         android:textColor="@color/newUser"
         android:text=""/>
-
-
-
+    
 </LinearLayout>
